@@ -44,7 +44,7 @@ async function main() {
 
 
 const sessionOptions={
-  secret: "mysupersecretkey",
+  secret: process.env.SECRET,
   resave: false,
   saveUninitialized: true,
   cookie:{
