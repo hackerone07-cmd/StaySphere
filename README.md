@@ -1,11 +1,4 @@
 
-# ✅ **StaySphere — README.md**
-
-Below is the full README.
-You can copy-paste it directly into your repo.
-
----
-
 # **StaySphere — Full-Stack Room Listing, Booking & Review Platform**
 
 StaySphere is a full-stack web application that enables hosts to list hotel rooms with images and details, while allowing users to browse, book, and review stays. The platform includes secure authentication, role-based access, booking workflows, media uploads, and a modular backend architecture built with Node.js, Express, and MongoDB.
