@@ -1,6 +1,6 @@
 import express from 'express';
 import { Router } from 'express';
-import wrapAsync from '../utils/Wrapasync.js';
+import wrapAsync from '../utils/wrapAsync.js';
 import { isLoggedIn,isOwner, validateListing,} from '../middlewares/middleware.js';
 import multer from 'multer';
 import { cloudStorage } from '../cloudConfig.js';

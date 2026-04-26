@@ -33,13 +33,17 @@ app.use(methodOverride("_method"));
 app.engine('ejs',ejsMate);
 app.use(express.static(path.join(__dirname,"/public")));
 
+
+const uri = "mongodb://wonderlust:wxX6ohlLpoC5j7Y5@ac-iitznfy-shard-00-00.hryzdld.mongodb.net:27017,ac-iitznfy-shard-00-01.hryzdld.mongodb.net:27017,ac-iitznfy-shard-00-02.hryzdld.mongodb.net:27017/?ssl=true&replicaSet=atlas-femp7t-shard-0&authSource=admin&appName=wonderlust"
 // MongoDB connection
 main()
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log(err));
 
+
+
 async function main() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/wonderLust");
+  await mongoose.connect(uri);
 }
 
 

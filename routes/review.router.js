@@ -1,6 +1,6 @@
 
 import { Router } from 'express';
-import wrapAsync from '../utils/Wrapasync.js';
+import wrapAsync from '../utils/wrapAsync.js';
 import { isLoggedIn, isLoggedInDelete, isReviewAuthor, validateReview } from '../middlewares/middleware.js';
 import {createReview, destroyReview } from '../controllers/reviews.controller.js';
 

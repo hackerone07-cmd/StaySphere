@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import wrapAsync from '../utils/Wrapasync.js';
+import wrapAsync from '../utils/wrapAsync.js';
 import passport from 'passport';
 import { saveRedirectUrl } from '../middlewares/middleware.js';
 import { login, logout, renderLogin, renderSignup, signup } from '../controllers/users.controller.js';
