@@ -15,7 +15,7 @@ const signup = async(req,res)=>{
         req.login(registeredUser,(err)=>{
         if(err) 
             return next(err);
-        req.flash("success","Welcome To The WonderLust");
+        req.flash("success","Welcome To WonderLust");
         res.redirect("/listings");
     });
       
