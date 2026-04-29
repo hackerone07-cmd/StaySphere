@@ -98,8 +98,8 @@ app.use((err, req, res, next) => {
 // app.use("*",(req,res)=>{
     
 // })
-const port = process.env.PORT || 8080;
+
 // Server
-app.listen(port, () => {
-  console.log(`Server is running at port ${port}`);
+app.listen(3000, "0.0.0.0", () => {
+  console.log("Server running...");
 });
